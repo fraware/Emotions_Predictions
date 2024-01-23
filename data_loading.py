@@ -1,7 +1,8 @@
 import pandas as pd
-from sklearn.preprocessing import LabelEncoder, train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
 import numpy as np
-
+ 
 def load_and_process_data(file_path, train_size, random_state):
     """
     Load and process EEG data for emotion recognition.

@@ -34,6 +34,10 @@ To set up the project:
 python main.py
 ```
 
+## Results
+
+![image](https://github.com/fraware/Emotions_Predictions/assets/113530345/6380d2a7-c153-4d18-9e14-1743dc1a9a83)
+
 ## References
 
 This project references several studies and papers for EEG data analysis and deep learning approaches:

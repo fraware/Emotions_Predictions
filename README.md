@@ -34,6 +34,26 @@ To set up the project:
 python main.py
 ```
 
+## Dataset Summary
+
+- **Subjects**: The dataset was collected from two individuals, one male and one female.
+- **Measurement Duration**: Data for three emotional states—positive, neutral, and negative—was collected for 3 minutes each per state. Additionally, 6 minutes of resting data in a neutral state were recorded.
+- **Equipment Used**: The Muse EEG headband was employed to record data from the TP9, AF7, AF8, and TP10 electrode placements using dry electrodes.
+
+## Emotional Stimuli
+
+Data collection involved exposing subjects to various media clips to elicit positive and negative emotional states:
+
+**Negative Emotions:**
+- *Marley and Me* (Twentieth Century Fox) - Death Scene
+- *Up* (Walt Disney Pictures) - Opening Death Scene
+- *My Girl* (Imagine Entertainment) - Funeral Scene
+
+**Positive Emotions:**
+- *La La Land* (Summit Entertainment) - Opening musical number
+- *Slow Life* (BioQuest Studios) - Nature timelapse
+- *Funny Dogs* (MashupZone) - Compilation of funny dog videos
+
 ## Results
 
 ![image](https://github.com/fraware/Emotions_Predictions/assets/113530345/6380d2a7-c153-4d18-9e14-1743dc1a9a83)

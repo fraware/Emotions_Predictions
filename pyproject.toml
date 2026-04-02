@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emotions-predictions"
+version = "0.1.0"
+description = "EEG-based emotion recognition using a Keras GRU classifier."
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = "MIT"
+authors = [{ name = "Emotions Predictions contributors" }]
+keywords = ["eeg", "emotion", "deep-learning", "keras"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "tensorflow==2.16.2",
+  "scikit-learn==1.4.2",
+  "numpy==1.26.4",
+  "pandas==2.2.2",
+  "matplotlib==3.8.4",
+  "seaborn==0.13.2",
+  "typer==0.12.3",
+  "pydantic==2.7.1",
+  "pydantic-settings==2.2.1",
+  "python-dotenv==1.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.2.0",
+  "ruff==0.4.4",
+  "pre-commit==3.7.0",
+]
+
+[project.scripts]
+emotions-predictions = "emotions_predictions.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["B008"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["emotions_predictions"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "slow: long-running tests (e.g. TensorFlow fit smoke)",
+]
